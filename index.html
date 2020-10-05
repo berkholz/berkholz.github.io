@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+        <title>www.berkholz.org</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <![endif]-->
+
+        <!-- Custom styles for this template -->
+        <link href="css/carousel.css" rel="stylesheet">
+    </head>
+    <!-- NAVBAR
+    ================================================== -->
+    <body>
+        <div class="navbar-wrapper">
+            <div class="container">
+
+                <div class="navbar navbar-inverse navbar-static-top"
+                     role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span> <span
+                                    class="icon-bar"></span> <span class="icon-bar"></span> <span
+                                    class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">www.berkholz.org</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <!-- <li><a href="#contact">Contact</a></li> -->
+                                <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                        data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#vcard2fritzXML">vcard2fritzXML</a></li>
+                                    </ul></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Carousel
+    ================================================== -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./assets/images/100_1090_optimized.jpg" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Welcome!</h1>
+                            <p>This is my little website to share some staff, like tools,
+                                configurations, scripts etc. I hope you find what you are looking for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/images/100_1186_optimized.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Convert vcards to FRITZ!Box address book files.</h1>
+                            <p>If you want to convert a vcard file into the format of a
+                                FRITZ!Box address book import file, you can use the
+                                vcard2fritzXML tool. It's written in Java, works on Mac OS X, Windows and Linux.<br>
+                                And it is OpenSource.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#vcard2fritzXML" role="button">Learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
+                    class="glyphicon glyphicon-chevron-left"></span></a> <a
+                class="right carousel-control" href="#myCarousel" data-slide="next"><span
+                    class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        <!-- /.carousel -->
+
+
+
+        <!-- Marketing messaging and featurettes
+    ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+            <!-- START THE FEATURETTES -->
+
+            <!--<hr class="featurette-divider">-->
+            <a name="vcard2fritzXML"></a>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">
+                        vcard2FritzXML <span class="text-muted">Get your FRITZ!Box synchronised.</span>
+                    </h2>
+                    <p class="lead" style="color:black;">
+                        vcard2fritzXML is a tool written in Java to convert a vcard
+                        file to a FRITZ!Box address book import file. It's under the GPLv2 license. More informations is on <a href="https://github.com/berkholz/vcard2fritzXML">https://github.com/berkholz/vcard2fritzXML</a>.<br />
+                        FRITZ!Box is a popular DSL router in Germany by <a href="http://www.avm.de/">AVM</a>. 
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <!--<img class="featurette-image img-responsive"
+                         data-src="js/holder.js/500x500/auto"
+                         alt="Generic placeholder image">-->
+                    <img class="featurette-image img-responsive" alt="vcard2fritzXML illustration" src="assets/images/terminal.png" style="margin-top: 100px">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="pull-right">
+                <a href="#">Back to top</a>
+            </div>
+            <br />
+
+            <a name="about"></a>
+
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <!--<img class="featurette-image img-responsive" alt="About illustration." src="assets/images/about.png" style="margin-top: 0px">-->
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">
+                        About <span class="text-muted">All about terms and privacy.
+                        </span>
+                    </h2>
+
+                    <p class="lead"><b>Copyright</b><br />
+                        All pictures, texts, graphics or other interactive elements on this site are protected by german copyright or other laws for protecting intellectual properties.
+                        For every change, copying, distribution, use on other sites or any use the explicit approval have to be obtained by Marcel Berkholz. 
+
+                    </p>
+                    <p class="lead">
+                        <b>Nonliability</b><br />
+                        Informations on this website are provided free of charge. This website and all including pages make no warranty, express or implied, 
+                        or assume any legal liability or responsibility for the accuracy, 
+                        completeness, or usefulness of any information.
+                    </p>
+                    <p class="lead">
+                        <b>Links</b><br />
+                        This website makes no warranty, express or implied, or assume any legal or responsibility for the accuracy or usefullness of any links. 
+                        The Author is responsoble for the content behind any link not the provider who makes use of these links. 
+                        For any misdirected link, e.g. to implicid sexual or brutal conent, or unavailablitity, the website makes no warranty for that. 
+                        Furthermore there is no warranty for damages in case of using or not using any provided information.
+
+                        <!--Kopien von diesen Seiten sind nur für den privaten Bereich gestattet, nicht jedoch für kommerzielle Zwecke.-->
+                    </p>
+                    <p class="lead">
+                        <b>Contact</b><br />
+                        Marcel Berkholz<br />
+                        webmaster ( at ) berkholz ( dot ) org
+                    </p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- 
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">
+                                    And lastly, this one. <span class="text-muted">Checkmate.</span>
+                                </h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor
+                                    fringilla. Vestibulum id ligula porta felis euismod semper.
+                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    Fusce dapibus, tellus ac cursus commodo.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="featurette-image img-responsive"
+                                     data-src="js/holder.js/500x500/auto"
+                                     alt="Generic placeholder image">
+                            </div>
+                        </div>
+                        <hr class="featurette-divider">
+            -->
+
+            <!-- /END THE FEATURETTES -->
+
+
+            <!-- FOOTER -->
+            <footer>
+                <p class="pull-right">
+                    <a href="#">Back to top</a>
+                </p>
+                <p>
+                    &copy; 2016 www.berkholz.org 
+                    <!-- &middot;  <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+                </p>
+            </footer>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/holder.js"></script>
+    </body>
+</html>
