@@ -1,229 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-        <title>www.berkholz.org</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website of Marcel Berkholz">
+  <meta name="author" content="Marcel Berkholz">
+  <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+  <title>www.berkholz.org</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-            <![endif]-->
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">berkholz.org</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     <!--      <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</Abbr></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#vcard2fritzXML">vcard2FritzXML</a></li>
+              <li><a class="dropdown-item" href="#PaMooBa">PaMooBa - Parallel Moodle Backup</a></li>
+            </ul>
+          </li>
+        </ul>
 
-        <!-- Custom styles for this template -->
-        <link href="css/carousel.css" rel="stylesheet">
-    </head>
-    <!-- NAVBAR
-    ================================================== -->
-    <body>
-        <div class="navbar-wrapper">
-            <div class="container">
+      </div>
+    </div>
+  </nav>
 
-                <div class="navbar navbar-inverse navbar-static-top"
-                     role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span> <span
-                                    class="icon-bar"></span> <span class="icon-bar"></span> <span
-                                    class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">www.berkholz.org</a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <!-- <li><a href="#contact">Contact</a></li> -->
-                                <li class="dropdown"><a href="#" class="dropdown-toggle"
-                                                        data-toggle="dropdown">Projects <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#vcard2fritzXML">vcard2fritzXML</a></li>
-                                        <li><a href="#PaMooBa">PaMooBa</a></li>
-                                    </ul></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="assets/images/100_1090_optimized.jpg" alt="" width="100%">
+    <h1 class="display-5 fw-bold text-body-emphasis">Welcome!</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        This is my little website to share some staff, like tools,
+        configurations, scripts etc. I hope you find what you are looking for.
+      </p>
+    </div>
+  </div>
 
-            </div>
-        </div>
+  <hr class="featurette-divider">
 
+  <div class="px-4 pt-5 my-5 text-center">
+    <a name="vcard2fritzXML"></a>
+    <h2 class="featurette-heading">
+      vcard2FritzXML <span class="text-muted">Get your FRITZ!Box synchronised.</span>
+    </h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" style="color:black;"></p>
+      vcard2fritzXML is a tool written in Java to convert a vcard
+      file to a FRITZ!Box address book import file. It's under the GPLv2 license. <br />
+      FRITZ!Box is a popular DSL router in Germany by <a href="http://www.avm.de/">AVM</a>.<br />&nbsp;<br />
+      More informations is on <a
+        href="https://github.com/berkholz/vcard2fritzXML">https://github.com/berkholz/vcard2fritzXML</a>.
+      </p>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="assets/images/terminal_vcard2fritzxml.png" class="img-fluid mb-4" alt="" width="600px" loading="lazy">
+      </div>
+    </div>
+  </div>
 
-        <!-- Carousel
-    ================================================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="./assets/images/100_1090_optimized.jpg" alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Welcome!</h1>
-                            <p>This is my little website to share some staff, like tools,
-                                configurations, scripts etc. I hope you find what you are looking for.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="assets/images/100_1186_optimized.jpg" alt="Second slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Convert vcards to FRITZ!Box address book files.</h1>
-                            <p>If you want to convert a vcard file into the format of a
-                                FRITZ!Box address book import file, you can use the
-                                vcard2fritzXML tool. It's written in Java, works on Mac OS X, Windows and Linux.<br>
-                                And it is OpenSource.</p>
-                            <p>
-                                <a class="btn btn-lg btn-primary" href="#vcard2fritzXML" role="button">Learn
-                                    more</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
-                    class="glyphicon glyphicon-chevron-left"></span></a> <a
-                class="right carousel-control" href="#myCarousel" data-slide="next"><span
-                    class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-        <!-- /.carousel -->
+  <hr class="featurette-divider">
+  <div class="text-center">
+    <a href="#">Back to top</a>
+  </div>
 
+  <div class="px-4 pt-5 my-5 text-center">
+    <a name="PaMooBa"></a>
+    <h2 class="featurette-heading">
+      PaMooBa <span class="text-muted"><b>Pa</b>rallize your <b>Moo</b>dle <b>Ba</b>ckups.</span>
+    </h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" style="color:black;"></p>
+      PaMooBa stands for parallized Moodle backup. First I developed it as a proof of concept tool
+      while working at the <a href="https://www.htw-berlin.de/">HTW</a> for speeding
+      up the backup of large <a href="https://moodle.org/">Moodle</a> installations. After leaving the HTW I wanted to share the tool as open source,
+      so I completly redeveloped the tool with a different configuration format and database support
+      for mysql and postgresql. <br />&nbsp;<br />
+      For more informations see <a href="https://github.com/berkholz/pamooba">https://github.com/berkholz/pamooba</a>.
+      </p>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="assets/images/terminal_pamooba.png" class="img-fluid mb-4" alt="" width="600px" loading="lazy">
+      </div>
+    </div>
+  </div>
 
+  <hr class="featurette-divider">
+  <div class="text-center">
+    <a href="#">Back to top</a>
+  </div>
 
-        <!-- Marketing messaging and featurettes
-    ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+  <br />
 
-        <div class="container marketing">
-            <!-- START THE FEATURETTES -->
+  <div class="px-4 pt-5 my-5 text-center">
+    <a name="about"></a>
+    <h2 class="featurette-heading">
+      About <span class="text-muted">All about terms and privacy.
+      </span>
+    </h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" style="color:black;"></p>
 
-            <!--<hr class="featurette-divider">-->
-            <a name="vcard2fritzXML"></a>
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">
-                        vcard2FritzXML <span class="text-muted">Get your FRITZ!Box synchronised.</span>
-                    </h2>
-                    <p class="lead" style="color:black;">
-                        vcard2fritzXML is a tool written in Java to convert a vcard
-                        file to a FRITZ!Box address book import file. It's under the GPLv2 license. More informations is on <a href="https://github.com/berkholz/vcard2fritzXML">https://github.com/berkholz/vcard2fritzXML</a>.<br />
-                        FRITZ!Box is a popular DSL router in Germany by <a href="http://www.avm.de/">AVM</a>. 
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <!--<img class="featurette-image img-responsive"
-                         data-src="js/holder.js/500x500/auto"
-                         alt="Generic placeholder image">-->
-                    <img class="featurette-image img-responsive" alt="vcard2fritzXML illustration" src="assets/images/terminal_vcard2fritzxml.png" style="margin-top: 100px">
-                </div>
-            </div>
-            
-            <!--<hr class="featurette-divider">-->
-            <a name="PaMooBa"></a>
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive" alt="PaMooBo illustration" src="assets/images/terminal_pamooba.png" style="margin-top: 100px">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">
-                        PaMooBa <span class="text-muted"><b>Pa</b>rallize your <b>Moo</b>dle <b>Ba</b>ckups.</span>
-                    </h2>
-                    <p class="lead" style="color:black;">
-                        PaMooBa stands for parallized Moodle backup. I first developed it as a proof of concept tool 
-                        while working at the <a href="https://www.htw-berlin.de/">HTW</a> for speeding 
-                        up the backup of large Moodle installations. After leaving the HTW I wanted to share the tool, 
-                        so I have completly redeveloped the tools with a different configuration format and database support
-                        for mysql and postgresql. The source code is open source. <br>&nbsp;<br>
-                        For more informations see <a href="https://github.com/berkholz/pamooba">https://github.com/berkholz/pamooba</a>.
-                    </p>
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="pull-right">
-                <a href="#">Back to top</a>
-            </div>
-            <br />
+      </p>
+      <p class="lead"><b>Copyright</b><br />
+        All pictures, texts, graphics or other interactive elements on this site are protected by german copyright or
+        other laws for protecting intellectual properties.
+        For every change, copying, distribution, use on other sites or any use the explicit approval have to be
+        obtained by Marcel Berkholz.
 
-            <a name="about"></a>
+      </p>
+      <p class="lead">
+        <b>Nonliability</b><br />
+        Informations on this website are provided free of charge. This website and all including pages make no
+        warranty, express or implied,
+        or assume any legal liability or responsibility for the accuracy,
+        completeness, or usefulness of any information.
+      </p>
+      <p class="lead">
+        <b>Links</b><br />
+        This website makes no warranty, express or implied, or assume any legal or responsibility for the accuracy or
+        usefullness of any links.
+        The Author is responsoble for the content behind any link not the provider who makes use of these links.
+        For any misdirected link, e.g. to implicid sexual or brutal conent, or unavailablitity, the website makes no
+        warranty for that.
+        Furthermore there is no warranty for damages in case of using or not using any provided information.
 
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <!--<img class="featurette-image img-responsive" alt="About illustration." src="assets/images/about.png" style="margin-top: 0px">-->
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">
-                        About <span class="text-muted">All about terms and privacy.
-                        </span>
-                    </h2>
+        <!--Kopien von diesen Seiten sind nur für den privaten Bereich gestattet, nicht jedoch für kommerzielle Zwecke.-->
+      </p>
+      <p class="lead">
+        <b>Contact</b><br />
+        Marcel Berkholz<br />
+        webmaster ( at ) berkholz ( dot ) org
+      </p>
+    </div>
 
-                    <p class="lead"><b>Copyright</b><br />
-                        All pictures, texts, graphics or other interactive elements on this site are protected by german copyright or other laws for protecting intellectual properties.
-                        For every change, copying, distribution, use on other sites or any use the explicit approval have to be obtained by Marcel Berkholz. 
+  </div>
 
-                    </p>
-                    <p class="lead">
-                        <b>Nonliability</b><br />
-                        Informations on this website are provided free of charge. This website and all including pages make no warranty, express or implied, 
-                        or assume any legal liability or responsibility for the accuracy, 
-                        completeness, or usefulness of any information.
-                    </p>
-                    <p class="lead">
-                        <b>Links</b><br />
-                        This website makes no warranty, express or implied, or assume any legal or responsibility for the accuracy or usefullness of any links. 
-                        The Author is responsoble for the content behind any link not the provider who makes use of these links. 
-                        For any misdirected link, e.g. to implicid sexual or brutal conent, or unavailablitity, the website makes no warranty for that. 
-                        Furthermore there is no warranty for damages in case of using or not using any provided information.
+  <hr class="featurette-divider">
+  <!-- FOOTER -->
+  <footer class="px-1 pt-1 my-1 text-center">
+    <p style="center">
+      <a href="#">Back to top</a>
+    </p>
+    <p>
+      &copy; 2023 www.berkholz.org
+      <!-- &middot;  <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+    </p>
+  </footer>
 
-                        <!--Kopien von diesen Seiten sind nur für den privaten Bereich gestattet, nicht jedoch für kommerzielle Zwecke.-->
-                    </p>
-                    <p class="lead">
-                        <b>Contact</b><br />
-                        Marcel Berkholz<br />
-                        webmaster ( at ) berkholz ( dot ) org
-                    </p>
-                </div>
-            </div>
+  </div>
+  <!-- /.container -->
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
 
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
-
-
-            <!-- FOOTER -->
-            <footer>
-                <p class="pull-right">
-                    <a href="#">Back to top</a>
-                </p>
-                <p>
-                    &copy; 2023 www.berkholz.org 
-                    <!-- &middot;  <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
-                </p>
-            </footer>
-
-        </div>
-        <!-- /.container -->
-
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/jquery-2.0.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/holder.js"></script>
-    </body>
 </html>
