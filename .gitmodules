@@ -1,0 +1,3 @@
+[submodule "technix.de"]
+	path = technix.de
+	url = https://github.com/berkholz/technix.de.git
